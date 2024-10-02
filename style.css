@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Inconsolata:wght@200..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --------------- NAV ----------------- */
+
+nav {
+  background-color: #ab1414;
+  display: flex;
+}
+
+nav h1 {
+  font-family: "Anton", "sans serif";
+  color: white;
+  font-size: 3rem;
+}
+
+nav img {
+  width: 300px;
+}
+
+nav div {
+  width: calc(100vw - 200px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------  MAIN  -------------- */
+
+main {
+  display: flex;
+  align-items: center;
+}
+
+main img {
+  margin: 100px;
+  height: 700px;
+  border-radius: 10px;
+}
+
+main p {
+  margin: 100px;
+  font-family: "Inconsolata", "sans serif";
+  font-size: 1.8rem;
+  line-height: 120%;
+  text-align: center;
+  color: #ab1414;
+}
+
+/* ---------------- FOOTER --------------- */
+
+footer {
+  background-color: #ab1414;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer img {
+  height: 100px;
+}
+footer * {
+  margin: 10px 0;
+}
+
+footer p:last-child {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1800px) {
+  main img {
+    height: 30vw;
+  }
+
+  main img,
+  main p {
+    margin: 40px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-direction: column;
+  }
+
+  main img {
+    min-height: 200px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav h1 {
+    margin: 10px 0;
+  }
+}
